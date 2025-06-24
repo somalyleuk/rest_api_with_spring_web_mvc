@@ -15,8 +15,8 @@ public class BookService {
     private final AtomicLong idAuto = new AtomicLong();
 
     public BookService() {
-        books.add(new Book(idAuto.incrementAndGet(), "Spring in Action", "Craig Walls", 29.99));
-        books.add(new Book(idAuto.incrementAndGet(), "Java Programming", "John Smith", 35.99));
+        books.add(new Book(idAuto.incrementAndGet(), "Children's stories, English", "Sok Pisey", 29.99));
+        books.add(new Book(idAuto.incrementAndGet(), "Underground", "John Smith", 35.99));
     }
 
     public List<Book> getAllBooks() {
@@ -30,7 +30,7 @@ public class BookService {
     public Book addBook(Book book) {
         boolean isDuplicate = books.stream().anyMatch(existingBook -> existingBook.getTitle().equalsIgnoreCase(book.getTitle()) && existingBook.getAuthor().equalsIgnoreCase(book.getAuthor()));
         if (isDuplicate) {
-            throw new DuplicateBookException("A book with title '" + book.getTitle() + "' and author '" + book.getAuthor() + "' already exists.");
+            throw new DuplicateBookException("This book already book already exists brunh.");
         }
         book.setId(idAuto.incrementAndGet());
         books.add(book);
