@@ -16,4 +16,4 @@ http://localhost:8080/swagger-ui/index.html
 
 # thymeleaf template
 http://localhost:8080/
-# rest_api_with_spring_web_mvc
+
