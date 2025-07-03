@@ -1,13 +1,13 @@
 # Postman
-http://localhost:8080/api/v1/books
+http://localhost:8080/api/v1/products
 
-http://localhost:8080/api/v1/book/{id}
+http://localhost:8080/api/v1/product/{id}
 
-http://localhost:8080/api/v1/book
+http://localhost:8080/api/v1/product
 
-http://localhost:8080/api/v1/update/book/{id}
+http://localhost:8080/api/v1/update/product/{id}
 
-http://localhost:8080/api/v1/delete/book/{id}
+http://localhost:8080/api/v1/delete/product/{id}
 
 
 # Swagger 
