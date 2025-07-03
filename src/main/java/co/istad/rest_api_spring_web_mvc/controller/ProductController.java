@@ -1,6 +1,6 @@
 package co.istad.rest_api_spring_web_mvc.controller;
 
-import co.istad.rest_api_spring_web_mvc.dto.Response; // MODIFIED: Import from dto package
+import co.istad.rest_api_spring_web_mvc.dto.Response;
 import co.istad.rest_api_spring_web_mvc.dto.ProductRequest;
 import co.istad.rest_api_spring_web_mvc.dto.ProductResponse;
 import co.istad.rest_api_spring_web_mvc.service.ProductService;
