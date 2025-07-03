@@ -42,11 +42,10 @@ public class ProductController {
     }
 
     @PostMapping("create/product")
-    public ResponseEntity<Response<ProductResponse>> createProduct(@Valid @RequestBody ProductRequest productRequest) {
+    public ResponseEntity<Response<ProductResponse>> createNewProduct(@Valid @RequestBody ProductRequest productRequest) {
         ProductResponse newProduct = productService.createNewProduct(productRequest);
         Response<ProductResponse> response = Response.<ProductResponse>builder()
-                .message("Product created successfully.")
-                .status(HttpStatus.CREATED.value())
+                .message("Product has been created successfully.")
                 .data(newProduct)
                 .timestamp(LocalDateTime.now())
                 .build();
