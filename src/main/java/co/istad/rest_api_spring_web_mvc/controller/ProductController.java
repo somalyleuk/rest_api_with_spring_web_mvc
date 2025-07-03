@@ -41,7 +41,7 @@ public class ProductController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping("create/product")
+    @PostMapping("create/product")
     public ResponseEntity<Response<ProductResponse>> createProduct(@Valid @RequestBody ProductRequest productRequest) {
         ProductResponse newProduct = productService.createNewProduct(productRequest);
         Response<ProductResponse> response = Response.<ProductResponse>builder()
@@ -64,14 +64,12 @@ public class ProductController {
         return ResponseEntity.ok(response);
     }
     @DeleteMapping("delete/product/{id}")
-    public ResponseEntity<Response<Void>> deleteProduct(@PathVariable Integer id) {
+    public Response<Void> deleteProduct(@PathVariable Integer id) {
         productService.deleteProductById(id);
-        Response<Void> response = Response.<Void>builder()
+        return Response.<Void>builder()
                 .message("Product deleted successfully.")
-                .status(HttpStatus.NO_CONTENT.value())
-                .data(null)
+                .status(HttpStatus.OK.value())
                 .timestamp(LocalDateTime.now())
                 .build();
-        return ResponseEntity.noContent().build();
     }
 }

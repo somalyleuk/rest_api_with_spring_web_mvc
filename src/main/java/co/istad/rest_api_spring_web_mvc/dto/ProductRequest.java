@@ -17,3 +17,4 @@ public record ProductRequest(
         Double price
 ) {
 }
+

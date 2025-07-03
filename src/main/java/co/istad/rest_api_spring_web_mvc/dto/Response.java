@@ -13,3 +13,4 @@ public record Response<Object>(
         LocalDateTime timestamp
 ) {
 }
+
