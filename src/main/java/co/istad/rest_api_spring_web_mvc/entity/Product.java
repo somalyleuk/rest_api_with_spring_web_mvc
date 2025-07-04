@@ -1,4 +1,4 @@
-package co.istad.rest_api_spring_web_mvc.model;
+package co.istad.rest_api_spring_web_mvc.entity;
 
 
 import lombok.AllArgsConstructor;

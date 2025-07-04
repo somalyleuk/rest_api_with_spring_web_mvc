@@ -2,7 +2,7 @@ package co.istad.rest_api_spring_web_mvc.mapper;
 
 import co.istad.rest_api_spring_web_mvc.dto.ProductRequest;
 import co.istad.rest_api_spring_web_mvc.dto.ProductResponse;
-import co.istad.rest_api_spring_web_mvc.model.Product;
+import co.istad.rest_api_spring_web_mvc.entity.Product;
 import org.springframework.stereotype.Component;
 
 @Component

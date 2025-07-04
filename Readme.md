@@ -17,3 +17,9 @@ http://localhost:8080/swagger-ui/index.html
 # thymeleaf template
 http://localhost:8080/
 
+./gradlew bootRun
+./gradlew package clean
+./gradlew build
+./gradlew clean
+./gradlew build -x test
+

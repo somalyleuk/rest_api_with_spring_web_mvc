@@ -29,13 +29,3 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
     }
 }
-
-
-//@ControllerAdvice
-//public class GlobalExceptionHandler {
-//    @ExceptionHandler(ApiException.class)
-//    public ResponseEntity<?> handleApiException(ApiException e) {
-//        ErrorResponse errorResponse = new ErrorResponse(e.getStatus(), e.getMessage());
-//        return ResponseEntity.status(e.getStatus()).body(errorResponse);
-//    }
-//}
